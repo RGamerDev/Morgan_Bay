@@ -21,7 +21,6 @@ D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\o
 D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Morgan_Bay.TagHelpers.output.cache
 D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Morgan_Bay.RazorCoreGenerate.cache
 D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\OneDrive - CTU Career\Modules\Second Semester\CYP\FA3\Morgan_Bay\Morgan_Bay\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
