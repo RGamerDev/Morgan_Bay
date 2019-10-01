@@ -9,6 +9,8 @@ using Morgan_Bay.Models;
 
 namespace Morgan_Bay.Controllers
 {
+    [Route("")]
+    [Route("Home")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,14 +20,31 @@ namespace Morgan_Bay.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        [Route("")]
+        [Route("Index")]
         public IActionResult Index()
         {
-            return View();
+            return View("Views\\Home\\Reservations\\Index.cshtml");
         }
 
-        public IActionResult Reservations()
+        [Route("Index/Create")]
+        public IActionResult Create()
         {
-            return View();
+            return View("Views\\Home\\Reservations\\Create.cshtml");
+        }
+
+        [HttpGet]
+        [Route("Clients")]
+        public IActionResult Clients()
+        {
+            return View("Views\\Home\\Clients\\Index.cshtml");
+        }
+
+        [Route("Clients/Create")]
+        public IActionResult ClientsCreate()
+        {
+            return View("Views\\Home\\Clients\\Create.cshtml");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
