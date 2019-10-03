@@ -10,13 +10,19 @@ namespace Morgan_Bay.Models.Data
     {
         public BookingContext(DbContextOptions<BookingContext> options) : base(options){}
 
-        public DbSet<Client> Clients { get; set; }
-        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Customer> customers { get; set; }
+        public DbSet<Booking> bookings { get; set; }
+        public DbSet<Room> rooms { get; set; }
+        public DbSet<Payment> payments { get; set; }
+        public DbSet<Employee> employees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Client>().ToTable("Clients");
-            modelBuilder.Entity<Reservation>().ToTable("Reservations");
+            modelBuilder.Entity<Customer>().ToTable("Customer");
+            modelBuilder.Entity<Booking>().ToTable("Booking");
+            modelBuilder.Entity<Room>().ToTable("Room");
+            modelBuilder.Entity<Payment>().ToTable("Payment");
+            modelBuilder.Entity<Employee>().ToTable("Employee");
         }
     }
 }

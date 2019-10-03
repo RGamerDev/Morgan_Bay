@@ -11,39 +11,39 @@ namespace Morgan_Bay.Models.Data
         {
             context.Database.EnsureCreated();
 
-            if (context.Clients.Any())
+            if (context.customers.Any())
             {
                 return;
             }
 
-            Client[] clients = new Client[]
+            Customer[] customers = new Customer[]
             {
-                new Client{},
-                new Client{},
-                new Client{},
-                new Client{},
-                new Client{}
+                new Customer{},
+                new Customer{},
+                new Customer{},
+                new Customer{},
+                new Customer{}
             };
 
-            foreach (Client c in clients)
+            foreach (Customer c in customers)
             {
-                context.Clients.Add(c);
+                context.customers.Add(c);
             }
 
             context.SaveChanges();
 
-            Reservation[] reservations = new Reservation[]
+            Booking[] bookings = new Booking[]
             {
-                new Reservation{},
-                new Reservation{},
-                new Reservation{},
-                new Reservation{},
-                new Reservation{}
+                new Booking{},
+                new Booking{},
+                new Booking{},
+                new Booking{},
+                new Booking{}
             };
 
-            foreach (Reservation r in reservations)
+            foreach (Booking r in bookings)
             {
-                context.Reservations.Add(r);
+                context.bookings.Add(r);
             }
 
             context.SaveChanges();
