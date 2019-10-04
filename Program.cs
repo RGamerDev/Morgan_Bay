@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using Morgan_Bay.Models;
 
 namespace Morgan_Bay
 {
@@ -22,5 +24,6 @@ namespace Morgan_Bay
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }
