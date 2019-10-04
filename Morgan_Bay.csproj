@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="MCSD Foundation\" />
+    <Folder Include="Views\Customers\" />
   </ItemGroup>
 
 </Project>

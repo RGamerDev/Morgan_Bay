@@ -9,7 +9,7 @@ namespace Morgan_Bay.Models
     public class Employee
     {
         [Display(Name = "Id")]
-        public int Emp_ID { get; set; }
+        public int EmployeeID { get; set; }
 
         [Display(Name = "Name")]
         public string Emp_Name { get; set; }

@@ -9,7 +9,7 @@ namespace Morgan_Bay.Models
     public class Room
     {
         [Display(Name = "Room number")]
-        public int Room_Num { get; set; }
+        public int RoomID { get; set; }
 
         [Display(Name = "Floor number")]
         public int Floor_Num {get; set;}

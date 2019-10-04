@@ -9,7 +9,7 @@ namespace Morgan_Bay.Models
     public class Booking
     {
         [Display(Name = "Id")]
-        public int Booking_ID { get; set; }
+        public int BookingID { get; set; }
 
         [Display(Name = "Booking Date")]
         public string Booking_Date {get; set;}
@@ -19,5 +19,6 @@ namespace Morgan_Bay.Models
 
         [Display(Name = "Room Id")]
         public int Room_Num {get; set;}
+
     }
 }

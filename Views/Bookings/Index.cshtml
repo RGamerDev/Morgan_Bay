@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Morgan_Bay.Models.Booking>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cust_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room_Num)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Booking_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cust_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Room_Num)
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.BookingID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

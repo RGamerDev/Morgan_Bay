@@ -59,8 +59,10 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: linear-gradient(to top, #FFFFFF, #DDA520);
+    background-repeat: no-repeat;
 }
 .footer {
   position: absolute;

@@ -9,7 +9,7 @@ namespace Morgan_Bay.Models
     public class Payment
     {
         [Display(Name = "Id")]
-        public int Payment_ID { get; set; }
+        public int PaymentID { get; set; }
 
         [Display(Name = "Type")]
         public string Payment_Type {get; set;}
