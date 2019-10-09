@@ -31,6 +31,7 @@ namespace Morgan_Bay.Controllers
         [HttpGet, Route("Create")]
         public IActionResult Create(int? BookingID, string? Booking_Date, int? Cust_ID, int? Room_Num)
         {
+            //int? Index = _context.bookings.Count;
             if (BookingID != null || Booking_Date != null || Cust_ID != null || Room_Num != null)
             {
                 _context.bookings.Add(new Booking()
@@ -56,7 +57,8 @@ namespace Morgan_Bay.Controllers
         [HttpPost]
         public IActionResult DeleteBooking(int id)
         {
-            _context.bookings.RemoveAt(id - 1);
+            int index = id - 1;
+            _context.bookings.RemoveAt(index == -1 ? 0 : index) ;
             return View("Index", _context.bookings);
         }
 
